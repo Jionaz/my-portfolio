@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #090540;
+  overflow-x: hidden;
+}
+.bodyMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  background-color: #0f0231;
+  height: 100vh;
+  width: 100%;
+}
+.bodyMain .left {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(14, 0, 92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bodyMain .left img {
+
+  animation-name: imgA;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+
+  width: 70%;
+}
+@keyframes imgA {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.bodyMain .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  width: 50%;
+  height: 100%;
+  background-color: #0e0040;
+  color: aliceblue;
+  padding: 2%;
+  
+}
+.right p {
+  border: 2px black solid;
+  padding: 2%;
+}
+#sectionContact {
+  display: flex;
+   height: 80vh;
+  font-size: 1.7em;
+  background: #16181a;
+}
+
+.leftFooter{ 
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  height: 100%;
+  width: 50%;
+  color: aliceblue;
+}
+.leftFooter p {
+  margin: 1%;
+}
+.contact{
+  margin-bottom: 2%;
+  color: aliceblue;
+  font-size: 1.9em;
+}
+
+.leftFooter .icons a{
+  text-decoration: none;
+  margin: 1%;
+  color: aliceblue;
+  font-size: 2em;
+}
+
+.icons a .ig {
+  color: #d71452;
+}
+.icons a .li {
+  color: #0e0480;
+}
+.icons a .gh {
+  color: #ffffff;
+}
+
+.leftFooter .bottomText {
+  display: flex;
+  align-items: flex-end;
+  height: 30%;
+  color: white;
+}
+.apiApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0e0480;
+  color: aliceblue;
+  max-height: 100vh;
+  padding: 2%;
+}
+.apiApp input{
+  margin: 1%;
+  outline: none;
+  background: #cbcbcb;
+  border: none;
+  height: 7vh;
+}
+.apiApp button {
+  border: none;
+  height: 10vh;
+  width: 10%;
+  background: #16181a;
+  outline: none;
+  color: aliceblue;
+  transition: .4s;
+  border-radius: 10px;
+}
+.apiApp button:hover{
+  background: #808080;
+  transition: .3s;
+}
+.cardWheater {
+  background: #0f0231;
+  margin: 3%;
+  padding: 2%;
+  border-radius: 1%;
+  box-shadow: 10px 10px 70px -20px black;
+}
+#Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #11003b;
+  height: 100vh;
+  padding: 5%;
+  color: white;
+ 
+}
+#Projects p {
+  font-size: 1.4em;
+  color: white;
+  border: solid #575656 2px;
+  padding: 20px;
+}
+.danger {
+  font-size: 6em;
+  color: #ff0000;
+}
+.danger:hover {
+  color: #741414;
+}
